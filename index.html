@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+    <!--
+Housing Price Prediction Dataset - Demo Page
+RSK World - Free Programming Resources & Source Code
+Website: https://rskworld.in
+Contact: help@rskworld.in, support@rskworld.in
+Phone: +91 93305 39277
+Founder: Molla Samser
+Designer & Tester: Rima Khatun
+Created: 2026
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Housing Price Prediction Dataset - RSK World</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        
+        .content {
+            padding: 40px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        .section h2 {
+            color: #667eea;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .info-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .info-card h3 {
+            color: #764ba2;
+            margin-bottom: 10px;
+        }
+        
+        .features-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .features-list li {
+            padding: 10px;
+            margin: 5px 0;
+            background: #f0f0f0;
+            border-radius: 5px;
+            border-left: 3px solid #667eea;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: transform 0.3s;
+            margin: 10px 10px 10px 0;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .data-preview {
+            overflow-x: auto;
+            margin-top: 20px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background: #667eea;
+            color: white;
+        }
+        
+        tr:hover {
+            background: #f5f5f5;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+        
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        .tech-badge {
+            display: inline-block;
+            padding: 5px 15px;
+            margin: 5px;
+            background: #667eea;
+            color: white;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏠 Housing Price Prediction Dataset</h1>
+            <p>Real estate dataset for regression analysis and machine learning</p>
+        </header>
+        
+        <div class="content">
+            <div class="section">
+                <h2>📊 Dataset Overview</h2>
+                <p>This dataset includes property features like size, bedrooms, bathrooms, location coordinates, neighborhood data, and sale prices. Perfect for regression models, feature engineering, and real estate analytics.</p>
+                
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3>📈 Dataset Size</h3>
+                        <p><strong>50 properties</strong> with <strong>20 features</strong></p>
+                    </div>
+                    <div class="info-card">
+                        <h3>💰 Price Range</h3>
+                        <p>$180,000 - $1,225,000</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>🎯 Difficulty Level</h3>
+                        <p>Beginner</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>✨ Key Features</h2>
+                <ul class="features-list">
+                    <li>✅ Property features (bedrooms, bathrooms, square footage)</li>
+                    <li>✅ Location data (coordinates, zipcode, neighborhood)</li>
+                    <li>✅ Price information for regression models</li>
+                    <li>✅ Neighborhood features and comparisons</li>
+                    <li>✅ Ready for machine learning models</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>🛠️ Technologies</h2>
+                <div>
+                    <span class="tech-badge">CSV</span>
+                    <span class="tech-badge">JSON</span>
+                    <span class="tech-badge">Pandas</span>
+                    <span class="tech-badge">NumPy</span>
+                    <span class="tech-badge">Scikit-learn</span>
+                    <span class="tech-badge">Matplotlib</span>
+                    <span class="tech-badge">Seaborn</span>
+                    <span class="tech-badge">Jupyter</span>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>📁 Dataset Files</h2>
+                <p>Download the dataset files:</p>
+                <a href="housing_prices.csv" class="btn">Download CSV</a>
+                <a href="housing_prices.json" class="btn">Download JSON</a>
+                <a href="housing_prices.zip" class="btn">Download ZIP</a>
+            </div>
+            
+            <div class="section">
+                <h2>💻 Python Scripts</h2>
+                <p>Use our provided Python scripts for analysis:</p>
+                <ul class="features-list">
+                    <li><code>data_analysis.py</code> - Data analysis and model training</li>
+                    <li><code>data_visualization.py</code> - Create visualizations and plots</li>
+                    <li><code>housing_price_prediction.ipynb</code> - Jupyter notebook for interactive analysis</li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>📊 Sample Data Preview</h2>
+                <div class="data-preview">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Price</th>
+                                <th>Bedrooms</th>
+                                <th>Bathrooms</th>
+                                <th>Sqft Living</th>
+                                <th>Neighborhood</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>$221,900</td>
+                                <td>3</td>
+                                <td>1</td>
+                                <td>1,180</td>
+                                <td>Greenwood</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>$538,000</td>
+                                <td>3</td>
+                                <td>2.25</td>
+                                <td>2,570</td>
+                                <td>Northgate</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>$180,000</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td>770</td>
+                                <td>Kenmore</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>$604,000</td>
+                                <td>4</td>
+                                <td>3</td>
+                                <td>1,960</td>
+                                <td>West Seattle</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>$510,000</td>
+                                <td>3</td>
+                                <td>2</td>
+                                <td>1,680</td>
+                                <td>Sammamish</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>🚀 Getting Started</h2>
+                <ol style="padding-left: 20px; line-height: 2;">
+                    <li>Download the dataset files (CSV or JSON)</li>
+                    <li>Install Python dependencies: <code>pip install -r requirements.txt</code></li>
+                    <li>Run analysis scripts: <code>python data_analysis.py</code></li>
+                    <li>Open Jupyter notebook for interactive analysis</li>
+                    <li>Create visualizations: <code>python data_visualization.py</code></li>
+                </ol>
+            </div>
+        </div>
+        
+        <footer>
+            <p><strong>RSK World</strong> - Free Programming Resources & Source Code</p>
+            <p>Website: <a href="https://rskworld.in">https://rskworld.in</a></p>
+            <p>Contact: <a href="mailto:help@rskworld.in">help@rskworld.in</a> | <a href="mailto:support@rskworld.in">support@rskworld.in</a></p>
+            <p>Phone: +91 93305 39277</p>
+            <p>Founder: Molla Samser | Designer & Tester: Rima Khatun</p>
+        </footer>
+    </div>
+</body>
+</html>
+

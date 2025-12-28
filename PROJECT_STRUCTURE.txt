@@ -1,0 +1,108 @@
+Housing Price Prediction Dataset - Project Structure
+RSK World - Free Programming Resources & Source Code
+Website: https://rskworld.in
+Contact: help@rskworld.in, support@rskworld.in
+Phone: +91 93305 39277
+Founder: Molla Samser
+Designer & Tester: Rima Khatun
+Created: 2026
+
+================================================================================
+PROJECT FILES
+================================================================================
+
+📁 Root Directory
+├── 📄 housing_prices.csv                 - Main dataset (CSV format)
+├── 📄 housing_prices.json                - Dataset (JSON format)
+├── 📄 data_analysis.py                   - Basic data analysis and model training script
+├── 📄 data_visualization.py              - Data visualization script
+├── 📄 housing_price_prediction.ipynb     - Jupyter notebook for interactive analysis
+├── 📄 validate_data.py                   - Data validation script
+├── 📄 advanced_models.py                 - Advanced ML models (XGBoost, LightGBM, etc.) [NEW 2026]
+├── 📄 feature_engineering.py             - Advanced feature engineering [NEW 2026]
+├── 📄 hyperparameter_tuning.py           - Hyperparameter tuning with Grid/Randomized Search [NEW 2026]
+├── 📄 model_comparison.py                - Model comparison and visualization [NEW 2026]
+├── 📄 predict_price.py                   - Price prediction utility [NEW 2026]
+├── 📄 requirements.txt                   - Python package dependencies
+├── 📄 README.md                          - Project documentation
+├── 📄 index.html                         - Demo web page
+├── 📄 dataset_info.txt                   - Detailed dataset information
+├── 📄 LICENSE.txt                        - License information
+├── 📄 .gitignore                         - Git ignore rules
+└── 📄 PROJECT_STRUCTURE.txt              - This file
+
+📁 Generated Directories (created when running scripts)
+├── 📁 plots/                             - Visualization output directory
+├── 📁 models/                            - Saved trained models [NEW 2026]
+├── 📁 tuned_models/                      - Hyperparameter-tuned models [NEW 2026]
+└── 📁 housing_prices_engineered.csv      - Engineered dataset [NEW 2026]
+
+================================================================================
+FILE DESCRIPTIONS
+================================================================================
+
+housing_prices.csv
+  - Primary dataset file in CSV format
+  - Contains 50 property records with 20 features
+  - Ready for pandas import
+
+housing_prices.json
+  - Dataset in JSON format
+  - Alternative format for web applications
+  - Contains same data as CSV
+
+data_analysis.py
+  - Python script for data analysis
+  - Includes model training (Linear Regression)
+  - Generates statistics and evaluation metrics
+
+data_visualization.py
+  - Python script for creating visualizations
+  - Generates plots and saves to plots/ directory
+  - Includes correlation heatmaps, distributions, scatter plots
+
+housing_price_prediction.ipynb
+  - Jupyter notebook for interactive analysis
+  - Complete workflow from data loading to model evaluation
+  - Includes both Linear Regression and Random Forest models
+
+validate_data.py
+  - Utility script to validate dataset files
+  - Checks file integrity and structure
+  - Verifies all required files exist
+
+requirements.txt
+  - List of Python packages needed
+  - Use: pip install -r requirements.txt
+
+README.md
+  - Complete project documentation
+  - Installation instructions
+  - Usage examples
+
+index.html
+  - Demo web page
+  - Showcases dataset features
+  - Can be opened in browser
+
+================================================================================
+QUICK START
+================================================================================
+
+1. Install dependencies:
+   pip install -r requirements.txt
+
+2. Validate dataset:
+   python validate_data.py
+
+3. Run analysis:
+   python data_analysis.py
+
+4. Create visualizations:
+   python data_visualization.py
+
+5. Open Jupyter notebook:
+   jupyter notebook housing_price_prediction.ipynb
+
+================================================================================
+

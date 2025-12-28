@@ -1,0 +1,85 @@
+Housing Price Prediction Dataset - Dataset Information
+RSK World - Free Programming Resources & Source Code
+Website: https://rskworld.in
+Contact: help@rskworld.in, support@rskworld.in
+Phone: +91 93305 39277
+Founder: Molla Samser
+Designer & Tester: Rima Khatun
+Created: 2026
+
+================================================================================
+DATASET INFORMATION
+================================================================================
+
+Dataset Name: Housing Price Prediction Dataset
+Category: Tabular Data
+Difficulty: Beginner
+Total Records: 50 properties
+Total Features: 20 columns
+
+================================================================================
+FEATURE DESCRIPTIONS
+================================================================================
+
+id              : Unique identifier for each property
+price           : Sale price of the property (target variable)
+bedrooms        : Number of bedrooms
+bathrooms       : Number of bathrooms (can include half baths like 2.25)
+sqft_living     : Square footage of interior living space
+sqft_lot        : Square footage of land lot
+floors          : Number of floors/levels in the house
+waterfront      : Binary indicator (0=no, 1=yes) for waterfront view
+view            : Quality of view rating (0-4 scale)
+condition       : Overall condition rating (1-5 scale)
+grade           : Overall grade/quality rating (1-13 scale)
+sqft_above      : Square footage above ground level
+sqft_basement   : Square footage of basement
+yr_built        : Year the house was originally built
+yr_renovated    : Year of last renovation (0 if never renovated)
+zipcode         : ZIP code of property location
+lat             : Latitude coordinate
+long            : Longitude coordinate
+sqft_living15   : Average sqft of interior living space of 15 nearest neighbors
+sqft_lot15      : Average sqft of land lot of 15 nearest neighbors
+neighborhood    : Name of the neighborhood
+
+================================================================================
+USE CASES
+================================================================================
+
+1. Regression Analysis: Predict house prices based on features
+2. Feature Engineering: Create new features from existing ones
+3. Exploratory Data Analysis: Understand relationships between variables
+4. Machine Learning: Train and evaluate regression models
+5. Data Visualization: Create charts and plots for insights
+
+================================================================================
+RECOMMENDED MODELS
+================================================================================
+
+- Linear Regression
+- Random Forest Regressor
+- Gradient Boosting Regressor
+- Ridge/Lasso Regression
+- Support Vector Regression
+
+================================================================================
+FILE FORMATS
+================================================================================
+
+- CSV: housing_prices.csv (comma-separated values)
+- JSON: housing_prices.json (JavaScript Object Notation)
+
+================================================================================
+DEPENDENCIES
+================================================================================
+
+See requirements.txt for full list. Key libraries:
+- pandas: Data manipulation and analysis
+- numpy: Numerical computing
+- scikit-learn: Machine learning algorithms
+- matplotlib: Data visualization
+- seaborn: Statistical visualization
+
+================================================================================
+
